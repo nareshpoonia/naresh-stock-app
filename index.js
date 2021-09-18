@@ -15,8 +15,8 @@ function clickHandler() {
 }
 
 function calculateProfitAndLoss(ip, qty, price) {
-  var profit = price - ip;
-  var loss = ip - price;
+  var profit = (price - ip) * qty;
+  var loss = (ip - price) * qty;
   var profitPercentage = (profit / price) * 100;
   var lossPercentage = (loss / price) * 100;
   if (ip > price) {
