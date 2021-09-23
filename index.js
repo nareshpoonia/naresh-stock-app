@@ -6,11 +6,10 @@ var output = document.querySelector(".output");
 
 tellMeButton.addEventListener("click", clickHandler);
 
-var ip = Number(initialPrice.value);
-var qty = Number(quantity.value);
-var price = Number(currentPrice.value);
-
 function clickHandler() {
+  var ip = Number(initialPrice.value);
+  var qty = Number(quantity.value);
+  var price = Number(currentPrice.value);
   calculateProfitAndLoss(ip, qty, price);
 }
 
